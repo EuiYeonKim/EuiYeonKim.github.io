@@ -1,22 +1,43 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Directory Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
 </head>
-
 <body>
-    <audio controls>
-        <source src='./wave.mp3' type="audio/mp3">
-    </audio>
-
-    <img class="fit-picture" src="./sample.png" alt="Grapefruit slice atop a pile of other slices">
-
-    <script src="index.js"></script>
-
+  <table>
+    <tr>
+      <th>Speaker ID</th>
+      <th>text</th>
+      <th>Model 1</th>
+      <th>Model 2</th>
+      <th>Model 3</th>
+    </tr>
+    
+    <tr>
+    <td>speaker1</td>
+    <td><p>asdfaweiojk;rghjoweagjoiwejgiowegj</p></td>
+      <td><audio controls src="assets/audio/model1/speaker1.wav"></audio></td><td><audio controls src="assets/audio/model2/speaker1.wav"></audio></td><td><audio controls src="assets/audio/model3/speaker1.wav"></audio></td>
+    </tr>
+  
+    <tr>
+    <td>speaker2</td>
+    <td><p>asdasd</p></td>
+      <td><audio controls src="assets/audio/model1/speaker2.wav"></audio></td><td><audio controls src="assets/audio/model2/speaker2.wav"></audio></td><td><audio controls src="assets/audio/model3/speaker2.wav"></audio></td>
+    </tr>
+  
+  </table>
 </body>
-
 </html>
